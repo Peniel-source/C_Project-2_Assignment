@@ -397,7 +397,7 @@ void custom_analysis(Analyzer *a)
     //Cast to float first, to avoid integer division problems
     float score = (float)a->distinct / a->total_words;
 
-    printf("%d distinct out of %d total words\n");
+    printf("%d distinct out of %d total words\n", a->distinct, a->total_words);
     printf("Score: %.2f \n", score);
 
     if (score >= 0.7)
